@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Burst</title>
+    <!-- Tailwind and DaisyUI Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/49fefb0e14.js" crossorigin="anonymous"></script>
+    <!-- Tailwind Custom Styles -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
+</head>
+
+<body class="font-manropes font-lato">
+    <header class="container mx-auto">
+        <nav class="mt-10 lg:my-12">
+            <div class="p-5 flex flex-row-reverse md:flex-row-reverse lg:flex-row navbar justify-between bg-[#FFF] md:bg-[#F85559] rounded-[300px]">
+
+                <div class="">
+                    <div class="dropdown dropdown-end">
+                        <label tabindex="0" class="btn btn-square btn-ghost md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F85559] text-white rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hidden md:flex">
+                        <ul class="menu menu-horizontal px-1 text-white font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pl-0 md:pl-4">
+                    <a class="flex cursor-pointer justify-center items-center" href="index.html">
+                        <img src="images/logo.png" alt="" class="pr-2 w-[45px] md:w-[55px]">
+                        <h2 class="normal-case font-bold text-2xl lg:text-4xl text-black md:text-white">Fruit Burst</h2>
+                    </a>
+                </div>
+
+                <div class="hidden lg:block">
+                    <div class="wrap rounded-lg flex relative w-[250px] lg:w-[375px]">
+                        <input type="text" placeholder="Search here" class="input input-bordered input-primary w-full rounded-[300px] focus:outline-none border-0" />
+                        <button type="submit" class="bg-transparent absolute top-[10px] left-[160px] lg:top-[10px] lg:left-[335px]">
+                            <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                        </button>
+                        <!-- max-w-sm  -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+</body>
+
+</html>
