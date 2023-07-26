@@ -2,3 +2,29 @@
     font-family: 'Lato', sans-serif;
 }
 
+.banner-overlay {
+    border-radius: 8px;
+    background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+}
+.banner-button {
+    background-color: #121212;
+    color: #fff;
+    border: 1px solid #121212;
+    border-radius: 100% !important;
+}
+.banner-button:hover {
+    background-color: #fff;
+    color: #121212;
+}
+.main-button-style {
+    background-color: #F85559;
+    font-weight: 800;
+    color: #fff;
+}
+.main-button-style:hover {
+    color: #121212;
+}
+.banner-sub-img {
+    height: 80px;
+    width: 100%;
+}

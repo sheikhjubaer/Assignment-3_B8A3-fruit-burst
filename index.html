@@ -11,7 +11,8 @@
     <!-- Google fonts Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/49fefb0e14.js" crossorigin="anonymous"></script>
@@ -22,7 +23,7 @@
                 extend: {
                     colors: {
                         'gradient-start': '#FF8938',
-                        'gradient-end': '#F00',
+                        'btn-color': '#121212',
                     }
                 }
             }
@@ -30,28 +31,34 @@
     </script>
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/styles.css">
-    
+
 </head>
 
-<body class="font-manropes font-lato">
+<body class="font-lato">
+    <!-- Nav Section Starts -->
     <header class="container mx-auto">
-        <nav class="mt-10 lg:my-12">
-            <div class="p-5 flex flex-row-reverse md:flex-row-reverse lg:flex-row navbar justify-between bg-[#FFF] md:bg-[#F85559] rounded-[300px]">
+        <nav class="my-0 md:my-12">
+            <div
+                class="p-5 flex flex-row-reverse md:flex-row-reverse lg:flex-row navbar justify-between bg-[#FFF] md:bg-[#F85559] rounded-[300px]">
 
                 <div class="">
-                    <div class="dropdown dropdown-end">
+                    <div class="dropdown dropdown-end z-40">
                         <label tabindex="0" class="btn btn-square btn-ghost md:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                class="inline-block w-5 h-5 stroke-current">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
                         </label>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#F85559] text-white rounded-box w-52">
+                            class="menu menu-sm dropdown-content -mt-1 z-[1] p-2 shadow bg-[#F85559] text-white rounded-box w-52">
                             <li><a>Home</a></li>
                             <li><a>About Us</a></li>
                             <li><a>Shop</a></li>
                             <li><a>All Fruits</a></li>
                         </ul>
                     </div>
-                    
+
                     <div class="hidden md:flex">
                         <ul class="menu menu-horizontal px-1 text-white font-medium">
                             <li><a>Home</a></li>
@@ -65,23 +72,173 @@
                 <div class="pl-0 md:pl-4">
                     <a class="flex cursor-pointer justify-center items-center" href="index.html">
                         <img src="images/logo.png" alt="" class="pr-2 w-[45px] md:w-[55px]">
-                        <h2 class="normal-case font-bold text-2xl lg:text-4xl text-black md:text-white">Fruit Burst</h2>
+                        <h2 class="normal-case font-bold text-xl lg:text-4xl text-black md:text-white">Fruit Burst</h2>
                     </a>
                 </div>
 
                 <div class="hidden lg:block">
                     <div class="wrap rounded-lg flex relative w-[250px] lg:w-[375px]">
-                        <input type="text" placeholder="Search here" class="input input-bordered input-primary w-full rounded-[300px] focus:outline-none border-0" />
-                        <button type="submit" class="bg-transparent absolute top-[10px] left-[160px] lg:top-[10px] lg:left-[335px]">
+                        <input type="text" placeholder="Search here"
+                            class="input input-bordered input-primary w-full rounded-[300px] focus:outline-none border-0" />
+                        <button type="submit"
+                            class="bg-transparent absolute top-[10px] left-[160px] lg:top-[10px] lg:left-[335px]">
                             <i class="fa-solid fa-magnifying-glass text-lg"></i>
                         </button>
-                        <!-- max-w-sm  -->
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
+    <main class="relative">
+        <!-- Banner Section Starts -->
+        <section class="container mx-auto z-10">
+            <div class="carousel">
+                <!-- Slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="/images/banner4.png" class="w-full z-10 h-56 md:h-full" />
+                    <div class="absolute z-20 flex justify-center banner-overlay w-full h-full"></div>
+                    <div
+                        class="absolute z-30 flex justify-between md:justify-around items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4"
+                            class="btn h-[0px] w-[27px] md:h-[3rem] md:w-[3rem] rounded-full p-0  banner-button">❮</a>
+                        <div class="text-white text-center mr-1">
+                            <h1
+                                class="text-[1.5rem] md:text-[4rem] font-extrabold leading-[2rem] md:leading-[5rem] mb-1">
+                                Exotic tastes at your
+                                <br>doorstep
+                            </h1>
+                            <p class="mb-4 md:mb-8">We supply highly quality organic products</p>
+                            <button class="btn border-none main-button-style text-[1rem] md:text-[1.25rem]">Shop
+                                Now</button>
+                        </div>
+                        <a href="#slide2"
+                            class="btn h-[0px] w-[27px] md:h-[3rem] md:w-[3rem] rounded-full p-0 banner-button">❯</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="/images/banner3.png" class="w-full z-10 h-56 md:h-full" />
+                    <div class="absolute z-20 flex justify-center banner-overlay w-full h-full"></div>
+                    <div
+                        class="absolute z-30 flex justify-between md:justify-around items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1"
+                            class="btn h-[0px] w-[27px] md:h-[3rem] md:w-[3rem] rounded-full p-0  banner-button">❮</a>
+                        <div class="text-white text-center mr-1">
+                            <h1
+                                class="text-[1.5rem] md:text-[4rem] font-extrabold leading-[2rem] md:leading-[5rem] mb-1">
+                                Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="mb-4 md:mb-8">We supply highly quality organic products</p>
+                            <button class="btn border-none main-button-style text-[1rem] md:text-[1.25rem]">Shop
+                                Now</button>
+                        </div>
+                        <a href="#slide3"
+                            class="btn h-[0px] w-[27px] md:h-[3rem] md:w-[3rem] rounded-full p-0 banner-button">❯</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="/images/banner2.png" class="w-full z-10 h-56 md:h-full" />
+                    <div class="absolute z-20 flex justify-center banner-overlay w-full h-full"></div>
+                    <div
+                        class="absolute z-30 flex justify-between md:justify-around items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2"
+                            class="btn h-[0px] w-[27px] md:h-[3rem] md:w-[3rem] rounded-full p-0  banner-button">❮</a>
+                        <div class="text-white text-center mr-1">
+                            <h1
+                                class="text-[1.5rem] md:text-[4rem] font-extrabold leading-[2rem] md:leading-[5rem] mb-1">
+                                Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="mb-4 md:mb-8">We supply highly quality organic products</p>
+                            <button class="btn border-none main-button-style text-[1rem] md:text-[1.25rem]">Shop
+                                Now</button>
+                        </div>
+                        <a href="#slide4"
+                            class="btn h-[0px] w-[27px] md:h-[3rem] md:w-[3rem] rounded-full p-0 banner-button">❯</a>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="/images/banner1.png" class="w-full z-10 h-56 md:h-full" />
+                    <div class="absolute z-20 flex justify-center banner-overlay w-full h-full"></div>
+                    <div
+                        class="absolute z-30 flex justify-between md:justify-around items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3"
+                            class="btn h-[0px] w-[27px] md:h-[3rem] md:w-[3rem] rounded-full p-0  banner-button">❮</a>
+                        <div class="text-white text-center mr-1">
+                            <h1
+                                class="text-[1.5rem] md:text-[4rem] font-extrabold leading-[2rem] md:leading-[5rem] mb-1">
+                                Exotic tastes at your
+                                <br> doorstep
+                            </h1>
+                            <p class="mb-4 md:mb-8">We supply highly quality organic products</p>
+                            <button class="btn border-none main-button-style text-[1rem] md:text-[1.25rem]">Shop
+                                Now</button>
+                        </div>
+                        <a href="#slide1"
+                            class="btn h-[0px] w-[27px] md:h-[3rem] md:w-[3rem] rounded-full p-0 banner-button">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Section Starts -->
+        <section class="w-[100%] absolute z-20 hidden lg:block">
+            <div class="justify-items-end w-[50%] lg:w-[90%] xl:w-[70%] 2xl:w-[40%] -mt-24 grid grid-cols-0 lg:grid-cols-5 mx-auto p-2 bg-white rounded-xl">
+                <!-- card1 -->
+                <div class="card w-40 bg-base-100 hover:shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit1.png" alt="Shoes" class="rounded-xl w-full p-0 banner-sub-img" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>Strawberry</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card w-40 bg-base-100 hover:shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit2.png" alt="Shoes" class="rounded-xl w-full p-0 banner-sub-img" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>Orange</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card w-40 bg-base-100 hover:shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit3.png" alt="Shoes" class="rounded-xl w-full p-0 banner-sub-img" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>Mango</p>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card w-40 bg-base-100 hover:shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit4.png" alt="Shoes" class="rounded-xl w-full p-0 banner-sub-img" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>Strawberry</p>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card w-40 bg-base-100 hover:shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/fruit5.png" alt="Shoes" class="rounded-xl w-full p-0 banner-sub-img" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <p>Mango</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Deal Section Starts -->
+        <section>
+            <!-- universal tag -->
+            <div></div>
+        </section>
+    </main>
 
 </body>
 
